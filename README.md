@@ -13,12 +13,12 @@ setup_scripts.sh for top module
 env.sh for all 3 env para
 in RUN_JG.sh, change for top module
 
-to rerun run_duvpls.sh
-rm xDUVPLs/reachable_duvpls.sv 
-(also remove xDUVPLs/xDUVPLs_rundir/xDUVPLs_jgsession*)
+to rerun run_duvpls.sh  
+rm xDUVPLs/reachable_duvpls.sv  
+(also remove xDUVPLs/xDUVPLs_rundir/xDUVPLs_jgsession*)  
 
-to rerun run_gendfg.sh
-probably rm -r synthlc/xGenPerfLocDfgDiv/tmp_rundir/tmp_jgsession*
-then try: BYPASS=0 ./run_gendfg.sh
+to rerun run_gendfg.sh  
+probably rm -r synthlc/xGenPerfLocDfgDiv/tmp_rundir/tmp_jgsession*  
+then try: BYPASS=0 ./run_gendfg.sh  
 
-Changes in run_gendfg.sh to avoid overwriting the generated dfg_e.txt
+Changes in run_gendfg.sh to avoid overwriting the generated dfg_e.txt  

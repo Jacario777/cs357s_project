@@ -1,0 +1,16 @@
++define+ABV_ON
++define+WT_DCACHE
++define+FVT
++incdir+DESIGNDIR/Rocket
+
+DESIGNDIR/Rocket/Arbiter3_LLWB.sv
+DESIGNDIR/Rocket/BreakpointUnit.sv
+DESIGNDIR/Rocket/CSRFile.sv
+DESIGNDIR/Rocket/RVCExpander.sv
+DESIGNDIR/Rocket/IBuf.sv
+DESIGNDIR/Rocket/MulDiv.sv
+DESIGNDIR/Rocket/PlusArgTimeout.sv
+DESIGNDIR/Rocket/rf_31x32.sv
+DESIGNDIR/Rocket/RocketALU.sv
+DESIGNDIR/Rocket/plusarg_reader.v
+
