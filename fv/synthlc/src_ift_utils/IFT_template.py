@@ -3,7 +3,7 @@ sanity_template = '''
 INSTN_CONSTRAINT
 
 // decision
-DECSANITY: cover property (@(posedge clk_i) 
+DECSANITY: cover property (@(posedge clock) 
     DECNODE ##1 
     // follower set
     (
@@ -17,7 +17,7 @@ dynamic_template_header = '''
 `define DYNAMIC
 OP_TAINT
 
-OVERLAP: assume property (@(posedge clk_i) 
+OVERLAP: assume property (@(posedge clock) 
     DECNODE |-> 
     (i1_in_some_pl)
 );
@@ -28,7 +28,7 @@ OP_TAINT
 INSTN_CONSTRAINT
 
 // decision
-DECSANITY: cover property (@(posedge clk_i) 
+DECSANITY: cover property (@(posedge clock) 
     DECNODE ##1 
     // follower set
     (
@@ -36,7 +36,7 @@ DECSANITY: cover property (@(posedge clk_i)
     )
 );
 
-DEP_FIELD: cover property (@(posedge clk_i)
+DEP_FIELD: cover property (@(posedge clock)
     DECNODE ##1 
     // follower set
     (
@@ -55,14 +55,14 @@ dynamic_template_header = '''
 `define DYNAMIC
 OP_TAINT
 
-OVERLAP: assume property (@(posedge clk_i) 
+OVERLAP: assume property (@(posedge clock) 
     DECNODE |-> 
     (i1_in_some_pl)
 );
 '''
 
 decision_template = '''
-DEP_I_FIELD: cover property (@(posedge clk_i)
+DEP_I_FIELD: cover property (@(posedge clock)
     (INSTN_CONSTRAINT &&
     I1_CONSTRAINT &&
     DECNODE) ##1 
@@ -86,12 +86,12 @@ INSTN_CONSTRAINT
 I1_CONSTRAINT
 
 
-OVERLAP: assume property (@(posedge clk_i) 
+OVERLAP: assume property (@(posedge clock) 
     DECNODE |-> 
     (i1_in_some_pl)
 );
 
-DEP_I_FIELD: cover property (@(posedge clk_i)
+DEP_I_FIELD: cover property (@(posedge clock)
     DECNODE ##1 
     // follower set
     (
@@ -113,7 +113,7 @@ INSTN_CONSTRAINT
 
 I1_CONSTRAINT
 
-DEP_I_FIELD: cover property (@(posedge clk_i)
+DEP_I_FIELD: cover property (@(posedge clock)
     DECNODE ##1 
     // follower set
     (
@@ -137,12 +137,12 @@ INSTN_CONSTRAINT
 
 I1_CONSTRAINT
 
-OVERLAP: assume property (@(posedge clk_i) 
+OVERLAP: assume property (@(posedge clock) 
     DECNODE |-> 
     (i1_in_some_pl)
 );
 
-DEP_I_FIELD: cover property (@(posedge clk_i)
+DEP_I_FIELD: cover property (@(posedge clock)
     DECNODE ##1 
     // follower set
     (
