@@ -12,7 +12,7 @@ always @(posedge clock) begin
 `ifdef SYMSTART
     if (!rst_ni_psuedo) begin
 `else
-    if (!reset) begin
+    if (reset) begin
 `endif
         first <= 1;
     end else if (first == 1) begin

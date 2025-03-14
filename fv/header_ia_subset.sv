@@ -110,12 +110,6 @@ wire MEM_s2 =
 	(mem_ctrl_branch == 1'd1) && 
 	(mem_ctrl_mem == 1'd0) && 
 	 1'b1; 
-wire MEM_s3 = 
-	(mem_reg_pc == pc0) && 
-	(mem_pc_valid == 1'd0) && 
-	(mem_ctrl_branch == 1'd1) && 
-	(mem_ctrl_mem == 1'd1) && 
-	 1'b1; 
 wire MEM_s4 = 
 	(mem_reg_pc == pc0) && 
 	(mem_pc_valid == 1'd1) && 
@@ -134,12 +128,6 @@ wire MEM_s6 =
 	(mem_ctrl_branch == 1'd1) && 
 	(mem_ctrl_mem == 1'd0) && 
 	 1'b1; 
-wire MEM_s7 = 
-	(mem_reg_pc == pc0) && 
-	(mem_pc_valid == 1'd1) && 
-	(mem_ctrl_branch == 1'd1) && 
-	(mem_ctrl_mem == 1'd1) && 
-	 1'b1; 
 wire WB_s10 = 
 	(wb_reg_pc == pc0) && 
 	(wb_reg_valid == 1'd1) && 
@@ -153,20 +141,6 @@ wire WB_s11 =
 	(wb_reg_replay == 1'd0) && 
 	(wb_ctrl_wxd == 1'd1) && 
 	((wb_valid == 1'b1) == 1'd1) && 
-	 1'b1; 
-wire WB_s12 = 
-	(wb_reg_pc == pc0) && 
-	(wb_reg_valid == 1'd1) && 
-	(wb_reg_replay == 1'd1) && 
-	(wb_ctrl_wxd == 1'd0) && 
-	((wb_valid == 1'b1) == 1'd0) && 
-	 1'b1; 
-wire WB_s14 = 
-	(wb_reg_pc == pc0) && 
-	(wb_reg_valid == 1'd1) && 
-	(wb_reg_replay == 1'd1) && 
-	(wb_ctrl_wxd == 1'd1) && 
-	((wb_valid == 1'b1) == 1'd0) && 
 	 1'b1; 
 wire WB_s2 = 
 	(wb_reg_pc == pc0) && 

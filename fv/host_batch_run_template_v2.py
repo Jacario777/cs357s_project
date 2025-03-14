@@ -38,6 +38,7 @@ print("NNN is %d" % NNN)
 
 
 files = os.listdir(SV_FILE_DIR)
+print(SV_FILE_DIR)
 tasks = []
 cnt = 0
 for itm in files:
