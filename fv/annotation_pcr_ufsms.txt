@@ -11,13 +11,14 @@ _ibuf_io_inst_0_valid
 EX
 ex_reg_pc
 ex_pc_valid
-ex_ctrl_div
+ex_ctrl_mul
 
 MEM
 mem_reg_pc
 mem_pc_valid
 mem_ctrl_branch
 mem_ctrl_mem
+mem_ctrl_mul
 
 WB
 wb_reg_pc
