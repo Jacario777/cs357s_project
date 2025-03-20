@@ -1,6 +1,8 @@
 # cs357s_project
 Project repo for cs357s
 
+Project Google Drive containing further artifacts: https://drive.google.com/drive/folders/1N0zGE3_xtafTsAKsVCYA9VF5JSxNM9vs?usp=sharing
+
 Rocket RISC-V CPU: https://github.com/chipsalliance/rocket-chip
 RTL2MuPATH: https://github.com/yaohsiaopid/synthlc/blob/master/03-rtl2mupath.md
 YoSys: https://github.com/YosysHQ/yosys
